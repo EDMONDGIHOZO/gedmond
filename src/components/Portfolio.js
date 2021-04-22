@@ -18,16 +18,16 @@ export default function Portfolio() {
 	}, []);
 
 	return (
-		<main className="bg-red-100 min-h-screen p-12">
+		<main className="bg-gray-800 min-h-screen p-12">
 			<section className="container mx-auto">
-				<h2 className="text-5xl flex my-6 justify-center bg-white rounded text-red-500 shadow-md cursive">
+				<h2 className="text-5xl flex my-6 justify-center rounded text-gray-500 cursive">
 					Done Projects
 				</h2>
 				<section className="grid grid-cols-3 gap-8">
 					{projects &&
 						projects.map((project, index) => (
-							<article className="relative rounded-lg shadow-xl bg-white p-16">
-								<h4 className="text-gray-800 font-bold mb-2 hover:text-red-300">
+							<article className="relative rounded-lg shadow-xl bg-gray-400 p-16">
+								<h4 className="text-gray-800 font-bold mb-2 hover:text-gray-300">
 									{project.title}
 								</h4>
 								<div className="text-gray-500 text-xs space-x-4">
@@ -46,7 +46,7 @@ export default function Portfolio() {
 											href={project.link}
 											target="_blank"
 											rel="noreferrer"
-											className="text-red-500 font-bold hover:underline hover:text-red-400"
+											className="text-gray-500 font-bold hover:underline hover:text-gray-400"
 										>
 											View Project{" "}
 											<span role="img" aria-label="right pointer">

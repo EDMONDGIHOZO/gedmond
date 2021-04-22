@@ -6,11 +6,11 @@ export default function NavBar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
 		<>
-			<nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-red-500">
+			<nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-900">
 				<div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
 					<div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 						<a
-							className="inline-flex items-center mr-3 tracking-widest text-yellow-200 cursive hover:text-white hover:font-light"
+							className="inline-flex items-center mr-3 tracking-widest text-gray-200 cursive hover:text-white hover:font-light"
 							href="/"
 						>
 							G-EDMOND
@@ -33,21 +33,21 @@ export default function NavBar({ fixed }) {
 						<nav className="flex">
 							<NavLink
 								to="/about"
-								className="inline-flex items-center px-3  mr-4  rounded hover:text-white hover:font-light font-bold"
+								className="inline-flex items-center text-gray-500 px-3  mr-4  rounded hover:text-white hover:font-light font-bold"
 								activeClassName="text-white"
 							>
 								ABOUT ME
 							</NavLink>
 							<NavLink
 								to="/portfolio"
-								className="inline-flex items-center px-3 mr-4 rounded hover:text-white hover:font-light font-bold"
+								className="inline-flex items-center text-gray-500 px-3 mr-4 rounded hover:text-white hover:font-light font-bold"
 								activeClassName="text-white"
 							>
 								PORTFOLIO
 							</NavLink>
 							<NavLink
 								to="/blog"
-								className="inline-flex items-center px-3 mr-4 rounded hover:text-white hover:font-light font-bold"
+								className="inline-flex items-center text-gray-500 px-3 mr-4 rounded hover:text-white hover:font-light font-bold"
 								activeClassName="text-white"
 							>
 								BLOG

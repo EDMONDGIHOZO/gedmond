@@ -47,8 +47,8 @@ export default function OnePost() {
 		);
 
 	return (
-		<div className="bg-red-200 min-h-screen p-12">
-			<div className="container shadow-lg mx-auto bg-red-100 rounded-lg">
+		<div className="bg-gray-200 min-h-screen p-12">
+			<div className="container shadow-lg mx-auto bg-gray-100 rounded-lg">
 				<div className="relative">
 					<div className="absolute h-full w-full flex items-center justify-center p-8">
 						{/* Title Section */}
@@ -82,7 +82,7 @@ export default function OnePost() {
 						dataset={sanityClient.clientConfig.dataset}
 					/>
 					<Link to="/blog">
-						<button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+						<button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
 							back to posts
 						</button>
 					</Link>
