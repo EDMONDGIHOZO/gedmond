@@ -16,7 +16,7 @@ export default function Blog() {
 	});
 
 	return (
-		<main className="bg-red-100 min-h-screen p-12">
+		<main className="bg-red-200 min-h-screen p-12">
 			<section className="container mx-auto">
 				<h1 className="text-4xl"> Blog posts</h1>
 				<h2>Welcome to my blog posts </h2>
@@ -25,7 +25,7 @@ export default function Blog() {
 						postData.map((post, index) => (
 							<article>
 								<Link to={"/post/" + post.slug.current} key={post.slug.current}>
-									<span className="block h-64 relative rounded shadow leading-snug my-5 border-l-8 border-pink-400">
+									<span className="block h-64 relative rounded shadow leading-snug my-5 border-t-8 border-pink-400">
 										<img
 											src={post.mainImage.asset.url}
 											alt={post.mainImage.alt}
