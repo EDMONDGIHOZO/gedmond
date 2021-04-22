@@ -1,23 +1,29 @@
-
 /* src/index.css */
 
 @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
 @import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Zen+Dots&display=swap");
 
 .cursive {
-  font-family: "Amatic SC", cursive;
-  font-weight: 700;
+	font-weight: 400;
+	font-family: "Zen Dots", cursive;
 }
 
 .prose img {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+}
+
+.main-name {
+	font-size: 150px;
+	font-weight: bold;
 }
 
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "Comfortaa", cursive;
 }
