@@ -32,7 +32,7 @@ export default function Blog() {
 											className="w-full h-full rounded-r object-cover absolute"
 										/>
 										<span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-											<h3 className="text-white font-bold text-lg font-bold px-3 py-4 bg-pink-400 rounded bg-opacity-75">
+											<h3 className="text-white font-bold text-lg font-bold px-3 py-4 bg-gray-400 rounded bg-opacity-75">
 												{post.title}
 											</h3>
 										</span>

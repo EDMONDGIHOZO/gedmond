@@ -1,12 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { SocialIcon } from "react-social-icons";
 
 export default function NavBar({ fixed }) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
 		<>
-			<nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-900">
+			<nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-900 navy">
 				<div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
 					<div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 						<a
@@ -53,32 +52,6 @@ export default function NavBar({ fixed }) {
 								BLOG
 							</NavLink>
 						</nav>
-						<div className="inline-flex mx-3">
-							<SocialIcon
-								url="https://linkedin.com/EDMONDGIHOZO"
-								className="mr-4"
-								target="_blank"
-								rel="noreferrer"
-								fgColor="#fff"
-								style={{ height: 25, width: 25 }}
-							/>
-							<SocialIcon
-								url="https://www.facebook.com/edmondgihozo"
-								className="mr-4"
-								target="_blank"
-								rel="noreferrer"
-								fgColor="#fff"
-								style={{ height: 25, width: 25 }}
-							/>
-							<SocialIcon
-								url="https://github.com/EDMONDGIHOZO"
-								className="mr-4"
-								target="_blank"
-								rel="noreferrer"
-								fgColor="#fff"
-								style={{ height: 25, width: 25 }}
-							/>
-						</div>
 					</div>
 				</div>
 			</nav>

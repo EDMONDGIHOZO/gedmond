@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import Post from "./components/Post";
 import Blog from "./components/Blog";
 import Navbar from "./layouts/NavBar";
+import Footer from "./layouts/Footer";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route component={Post} path="/post/:slug" />
 				<Route component={Portfolio} path="/portfolio" />
 			</Switch>
+			<Footer />
 		</BrowserRouter>
 	);
 }

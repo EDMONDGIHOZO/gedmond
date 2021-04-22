@@ -21,6 +21,10 @@
 	font-weight: bold;
 }
 
+.navy {
+	z-index: 1;
+}
+
 body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
@@ -28,14 +32,22 @@ body {
 	font-family: "Comfortaa", cursive;
 }
 
+.footer {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #1a202c;
+}
 /* animated name on the front */
 .sign {
 	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
+	width: 80%;
 	height: 50%;
+	z-index: 1;
 	background-image: radial-gradient(
 		ellipse 50% 35% at 50% 50%,
 		#6b1839,
@@ -44,7 +56,7 @@ body {
 	transform: translate(-50%, -50%);
 	letter-spacing: 2;
 	left: 50%;
-	top: 30%;
+	top: 40%;
 	font-family: "Clip";
 	text-transform: uppercase;
 	font-size: 6em;
