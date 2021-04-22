@@ -58,6 +58,7 @@ export default function NavBar({ fixed }) {
 								url="https://linkedin.com/EDMONDGIHOZO"
 								className="mr-4"
 								target="_blank"
+								rel="noreferrer"
 								fgColor="#fff"
 								style={{ height: 25, width: 25 }}
 							/>
@@ -65,6 +66,7 @@ export default function NavBar({ fixed }) {
 								url="https://www.facebook.com/edmondgihozo"
 								className="mr-4"
 								target="_blank"
+								rel="noreferrer"
 								fgColor="#fff"
 								style={{ height: 25, width: 25 }}
 							/>
@@ -72,6 +74,7 @@ export default function NavBar({ fixed }) {
 								url="https://github.com/EDMONDGIHOZO"
 								className="mr-4"
 								target="_blank"
+								rel="noreferrer"
 								fgColor="#fff"
 								style={{ height: 25, width: 25 }}
 							/>

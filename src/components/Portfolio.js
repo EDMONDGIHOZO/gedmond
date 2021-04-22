@@ -44,8 +44,8 @@ export default function Portfolio() {
 									<span>
 										<a
 											href={project.link}
-											rel="noopener"
 											target="_blank"
+											rel="noreferrer"
 											className="text-red-500 font-bold hover:underline hover:text-red-400"
 										>
 											View Project{" "}
