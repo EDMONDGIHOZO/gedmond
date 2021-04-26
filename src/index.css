@@ -30,6 +30,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: "Comfortaa", cursive;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .me {
@@ -49,6 +51,7 @@ body {
 	background: #1a202c;
 }
 /* animated name on the front */
+
 .intro {
 	position: absolute;
 	overflow: hidden;
