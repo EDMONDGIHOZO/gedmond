@@ -1,17 +1,24 @@
 import React from "react";
-import image from "../images/wp.jpg";
 
 export default function Home() {
 	return (
-		<main className="bg-gray-900">
-			<img src={image} alt="loading" className="absolute object-cover w-full" />
-			<section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-				<div className="sign">
-					<h1 className="text-6xl text-yellow-100 font-bold cursive leading-none fast-flicker">
+		<main className="bg-gray-900 overflow-hidden">
+			<section className="flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
+				<div className="intro">
+					<h2 className="text-4xl my-4 sm:4sm text-yellow-100 font-bold cursive leading-none fast-flicker">
 						{" "}
 						<span className="faster-flicker">Hi,</span>{" "}
 						<span className="flicker">i am a Developer</span>{" "}
-					</h1>
+					</h2>
+					<div className="text-white md:w-1/3 w-full">
+						<span>
+							I am passionate about building excellent software that improves
+							the lives of those around me. I specialize in creating software
+							for clients ranging from individuals and small-businesses all the
+							way to large enterprise corporations. What would you do if you had
+							a software expert available at your fingertips?
+						</span>
+					</div>
 				</div>
 			</section>
 		</main>
