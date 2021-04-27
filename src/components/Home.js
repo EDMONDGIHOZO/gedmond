@@ -8,10 +8,10 @@ export default function Home() {
 					<h2 className="text-4xl my-4 sm:4sm text-yellow-100 font-bold cursive leading-none fast-flicker">
 						{" "}
 						<span className="faster-flicker">Hi,</span>{" "}
-						<span className="flicker">i am a Developer</span>{" "}
+						<span className="flicker text-6xl">i am a Developer</span>{" "}
 					</h2>
 					<div className="text-white md:w-1/3 w-full">
-						<span>
+						<span className="faster-flicker text-3xl">
 							I am passionate about building excellent software that improves
 							the lives of those around me. I specialize in creating software
 							for clients ranging from individuals and small-businesses all the
