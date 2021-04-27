@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Home() {
-
   return (
     <main className="bg-gray-900 overflow-hidden">
       <section className="flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
@@ -50,3 +49,4 @@ export default function Home() {
       </section>
     </main>
   );
+}
