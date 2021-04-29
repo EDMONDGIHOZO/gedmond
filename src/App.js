@@ -12,31 +12,35 @@ import Navbar from "./layouts/NavBar";
 import Footer from "./layouts/Footer";
 
 function App() {
-	const [cursorX, setCursorX] = useState(null);
-	const [cursorY, setCursorY] = useState(null);
+  const [cursorX, setCursorX] = useState(null);
+  const [cursorY, setCursorY] = useState(null);
 
-	window.addEventListener("mousemove", (e) => {
-		setCursorX(e.pageX);
-		setCursorY(e.pageY);
-	});
+  window.addEventListener("mousemove", (e) => {
+    setCursorX(e.pageX);
+    setCursorY(e.pageY);
+  });
 
-	return (
-		<BrowserRouter>
-			<div style={{ position: "absolute" }}>
-				<Particles height="100vh" width="100vw" params={particlesConfig} />
-			</div>
-			<Navbar />
-			<Switch>
-				<Route component={Home} path="/" exact />
-				<Route component={About} path="/about" />
-				<Route component={Blog} path="/blog" />
-				<Route component={Post} path="/post/:slug" />
-				<Route component={Portfolio} path="/portfolio" />
-			</Switch>
-			<div className="cursor" style={{ left: cursorX, top: cursorY }}></div>
-			<Footer />
-		</BrowserRouter>
-	);
+  return (
+    <div className="wrapper">
+      <div className="particles">
+        <Particles height="100vh" width="100vw" params={particlesConfig} />
+      </div>
+      <div className="main">
+        <BrowserRouter>
+          <Navbar />
+          <Switch>
+            <Route component={Home} path="/" exact />
+            <Route component={About} path="/about" />
+            <Route component={Blog} path="/blog" />
+            <Route component={Post} path="/post/:slug" />
+            <Route component={Portfolio} path="/portfolio" />
+          </Switch>
+          <div className="cursor" style={{ left: cursorX, top: cursorY }}></div>
+          <Footer />
+        </BrowserRouter>
+      </div>
+    </div>
+  );
 }
 
 export default App;

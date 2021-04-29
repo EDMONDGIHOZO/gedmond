@@ -2,16 +2,15 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="bg-gray-900 overflow-hidden">
-      <section className="flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-        <div className="intro">
-          <h2 className="text-4xl my-4 sm:4sm text-yellow-100 font-bold cursive leading-none fast-flicker">
-            {" "}
-            <span className="faster-flicker">Hi,</span>{" "}
-            <span className="flicker">i am a Developer</span>{" "}
-          </h2>
-          <div className="text-white md:w-1/2 w-full">
-            <span>
+    <main className="h-full md:h-full bg-gray-800 p-5 antialiased ">
+      <h2 className="text-5xl cursive text-white my-5">
+        {" "}
+        <span>Hi,</span> <span>i am a Developer</span>{" "}
+      </h2>
+      <section className="bg-gray-400 p-2 w-full  rounded self-center  transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-100">
+        <div>
+          <div>
+            <span className="text-5xl sm:text-red">
               I am passionate about building excellent software that improves
               the lives of those around me. I specialize in creating software
               for clients ranging from individuals and small-businesses all the
@@ -26,7 +25,7 @@ export default function Home() {
           >
             <button
               type="button"
-              class="focus:outline-none m-5 text-white text-sm py-2 px-5 rounded-md bg-gradient-to-r from-red-400 to-blue-900 transform hover:bg-red-600 opacity-1 hover:shadow-lg flex items-center"
+              className="focus:outline-none m-5 text-white text-sm py-2 px-5 rounded-md bg-gradient-to-r from-red-400 to-blue-900 transform hover:bg-red-600 opacity-1 hover:shadow-lg flex items-center transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110"
             >
               <svg
                 class="w-4 h-4 mr-2"

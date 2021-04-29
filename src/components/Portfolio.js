@@ -23,7 +23,7 @@ export default function Portfolio() {
         <h2 className="text-5xl flex my-6 justify-center rounded text-gray-500 cursive">
           Done Projects
         </h2>
-        <section className="grid md:grid-cols-3 sm:grid-cols-1 gap-8">
+        <section className="grid md:grid-cols-1 sm:grid-cols-1 gap-8">
           {projects &&
             projects.map((project, index) => (
               <article className="relative rounded-lg shadow-xl bg-gray-400 p-16">
