@@ -2,20 +2,17 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="h-full md:h-full bg-gray-800 p-5 antialiased ">
+    <main className="h-screen bg-gray-800 p-5 antialiased">
       <h2 className="text-5xl cursive text-white my-5">
         {" "}
-        <span>Hi,</span> <span>i am a Developer</span>{" "}
+        <span></span> <span>Javascript Developer </span>{" "}
       </h2>
-      <section className="bg-gray-400 p-2 w-full  rounded self-center  transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-100">
+      <section className="bg-gray-400 p-2  rounded self-center  transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-100">
         <div>
           <div>
-            <span className="text-5xl sm:text-red">
-              I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?
+            <span className="text-3xl sm:text-red">
+              Web is under maintenence! but imma available on{" "}
+              <a href="mailto:gihozoedmond@gmail.com">email</a>
             </span>
           </div>
           <a

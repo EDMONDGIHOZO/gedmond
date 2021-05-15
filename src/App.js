@@ -27,7 +27,7 @@ function App() {
       </div>
       <div className="main">
         <BrowserRouter>
-          <Navbar />
+          {/* <Navbar /> */}
           <Switch>
             <Route component={Home} path="/" exact />
             <Route component={About} path="/about" />
@@ -36,7 +36,7 @@ function App() {
             <Route component={Portfolio} path="/portfolio" />
           </Switch>
           <div className="cursor" style={{ left: cursorX, top: cursorY }}></div>
-          <Footer />
+          {/* <Footer /> */}
         </BrowserRouter>
       </div>
     </div>
