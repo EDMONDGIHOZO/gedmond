@@ -8,8 +8,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Post from "./components/Post";
 import Blog from "./components/Blog";
-import Navbar from "./layouts/NavBar";
-import Footer from "./layouts/Footer";
+
 
 function App() {
   const [cursorX, setCursorX] = useState(null);
@@ -27,7 +26,6 @@ function App() {
       </div>
       <div className="main">
         <BrowserRouter>
-          {/* <Navbar /> */}
           <Switch>
             <Route component={Home} path="/" exact />
             <Route component={About} path="/about" />
@@ -36,7 +34,6 @@ function App() {
             <Route component={Portfolio} path="/portfolio" />
           </Switch>
           <div className="cursor" style={{ left: cursorX, top: cursorY }}></div>
-          {/* <Footer /> */}
         </BrowserRouter>
       </div>
     </div>
