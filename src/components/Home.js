@@ -1,48 +1,47 @@
-import React from "react";
+import React, {useRef} from "react";
+import { motion } from 'framer-motion';
+
+
 
 export default function Home() {
+
+    const constraintsRef = useRef(null);
+
   return (
-    <main className="h-screen bg-gray-800 p-5 antialiased">
-      <h2 className="text-5xl cursive text-white my-5">
-        {" "}
-        <span></span> <span>Javascript Developer </span>{" "}
-      </h2>
-      <section className="bg-gray-400 p-2  rounded self-center  transition duration-500 ease-in-out transform hover:-translate-y-3 hover:scale-100">
-        <div>
-          <div>
-            <span className="text-3xl sm:text-red">
-              Web is under maintenence! but imma available on{" "}
-              <a href="mailto:gihozoedmond@gmail.com">email</a>
-            </span>
-          </div>
-          <a
-            href="mailto:gihozoedmond@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button
-              type="button"
-              className="focus:outline-none m-5 text-white text-sm py-2 px-5 rounded-md bg-gradient-to-r from-red-400 to-blue-900 transform hover:bg-red-600 opacity-1 hover:shadow-lg flex items-center transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110"
-            >
-              <svg
-                class="w-4 h-4 mr-2"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                />
-              </svg>
-              Text Me
-            </button>
-          </a>
-        </div>
-      </section>
-    </main>
+      <div className="flex flex-wrap content-center bg-gray-400 dark:bg-gray-800 w-full h-screen text-center md:flex-row">
+              <motion.div
+                  className="flex items-center justify-center bg-gray-200 w-full md:w-1/2 leftSide column">
+                  <div className="max-w-lg transition-all ease-in-out duration-1000 transform translate-x-0 slide">
+                      <div className="example-container">
+                          <motion.div className="drag-area" ref={constraintsRef} />
+                          <motion.div drag dragConstraints={constraintsRef}>
+                              <motion.h1 animate={{ marginTop: 1, opacity: 1}} initial={{ marginTop:-400, opacity:0.2}}
+                                         transition={{ type: "spring", delay:0.3, stiffness: 50, restSpeed: 0.5 }}
+                                         className="text-2xl mb-4 transition duration-500 ease-in-out hover:text-gray-800 font-bold textShadow tracking-wide text-white dark:text-white md:text-7xl">
+                                  EDMOND GIHOZO
+                              </motion.h1>
+                          </motion.div>
+                      </div>
+                      <p className="mt-2 text-gray-600 mx-auto md:my-6">
+                          Javascript Developer - Full-Stack 💥✔
+                      </p>
+                  </div>
+              </motion.div>
+
+              <motion.div
+                      className="flex items-center justify-center w-full md:w-1/2 rightSide column hidden md:flex">
+                      <motion.div animate={{opacity:0.1, scale:1 , type:'spring', x:200}} initial={{scale:2 , x:200 }} transition={{ type: 'spring', restSpeed: 0.1 }} className='box1'></motion.div>
+                      <motion.div animate={{opacity:0.3, scale:1 , type:'tween', x:40}} initial={{scale:2 , x:200 }} transition={{ type: 'tween', restSpeed: 0.2 }} className='box2'></motion.div>
+                      <motion.div animate={{opacity:0.2, scale:1 , type:'spring', x:100}} initial={{scale:2 , x:200 }} transition={{ type: 'spring', restSpeed: 0.3 }} className='box3'></motion.div>
+                      <motion.h2 className='md:text-4xl font-light text-left text-white titleText'
+                                 initial={{fontSize:'80px'}}
+                                 transition={{ type: 'spring', stiffness: 50, restSpeed: 0.5 }}
+                                 animate={{
+                                     color: '#ffffff', fontSize: '36px', type:'spring'
+                                 }}>
+                          PORTFOLIO
+                      </motion.h2>
+              </motion.div>
+      </div>
   );
 }
