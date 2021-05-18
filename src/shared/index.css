@@ -3,110 +3,111 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;400;600&display=swap");
 
 body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Spartan', sans-serif;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Spartan", sans-serif;
 }
 
 .font-Spartan {
-  font-family: 'Spartan', sans-serif;
+	font-family: "Spartan", sans-serif;
 }
 
 .particles {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  margin-top: 0px;
-  z-index: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	margin-top: 0px;
+	z-index: 0;
 }
 
 .example-container div {
-  width: 100%;
-  top: calc(50% - 150px / 2);
-  left: calc(50% - 150px / 2);
+	width: 100%;
+	top: calc(50% - 150px / 2);
+	left: calc(50% - 150px / 2);
 }
 
 .example-container .drag-area {
-  opacity: 0.2;
-  top: calc(50% - 150px);
-  left: calc(50% - 150px);
+	opacity: 0.2;
+	top: calc(50% - 150px);
+	left: calc(50% - 150px);
 }
 
 .textShadow {
-  text-shadow: 4px 7px 11px rgba(64, 63, 63, 0.47);
-
+	text-shadow: 4px 7px 11px rgba(64, 63, 63, 0.47);
 }
 
 .textShadow:hover {
-  text-shadow: none;
-  cursor:grab;
+	text-shadow: none;
+	cursor: grab;
 }
 
 .boxContainer {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  margin: 20px;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin: 20px;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
 }
 
 .box1 {
-  border-radius: 50%;
-  position: absolute;
-  width: 320px;
-  height: 320px;
-  background: rgba(29, 29, 31, 0.89);
-  opacity: 0.1;
-  left: 61px;
-  top: 13px;
+	border-radius: 50%;
+	position: absolute;
+	width: 320px;
+	height: 320px;
+	background: rgba(29, 29, 31, 0.89);
+	opacity: 0.1;
+	left: 61px;
+	top: 13px;
 }
 
 .box2 {
-  border-radius: 50%;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.64);
-  opacity: 0.3;
-  margin-left: 70%;
-  margin-top: 70%;
-  backdrop-filter: blur(4px);
+	border-radius: 50%;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: rgba(255, 255, 255, 0.64);
+	opacity: 0.3;
+	margin-left: 70%;
+	margin-top: 70%;
+	backdrop-filter: blur(4px);
 }
-
 
 .box3 {
-  border-radius: 50%;
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.64);
-  opacity: 0.4;
-  left: 95px;
-  top: 27px;
-
+	border-radius: 50%;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background: rgba(255, 255, 255, 0.64);
+	opacity: 0.4;
+	left: 95px;
+	top: 27px;
 }
 .column {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .rightSide {
-  background-color: #F87171;
-  box-shadow: inset 9px 0px 15px 1px rgba(114, 114, 114, 0.29);
+	background-color: #f87171;
+	box-shadow: inset 9px 0px 15px 1px rgba(114, 114, 114, 0.29);
 }
 
-
-
 .titleText {
-  z-index: 9;
+	z-index: 9;
 }
