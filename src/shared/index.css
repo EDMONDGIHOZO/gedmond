@@ -64,6 +64,17 @@ body {
 	color: white;
 }
 
+.boxNext {
+	border-radius: 50%;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background: rgba(29, 29, 31, 0.89);
+	opacity: 0.1;
+	left: 61px;
+	top: 13px;
+}
+
 .box1 {
 	border-radius: 50%;
 	position: absolute;
@@ -71,8 +82,6 @@ body {
 	height: 320px;
 	background: rgba(29, 29, 31, 0.89);
 	opacity: 0.1;
-	left: 61px;
-	top: 13px;
 }
 
 .box2 {
@@ -101,13 +110,70 @@ body {
 	position: relative;
 	height: 100vh;
 	overflow: hidden;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
+.screen {
+	background-clip: content-box;
+	margin-top: auto;
+	margin-bottom: auto;
+	bottom: 0;
+}
+.side {
+	height: 100%;
+	color: black;
+}
 .rightSide {
-	background-color: #f87171;
+	background-color: #06275c;
 	box-shadow: inset 9px 0px 15px 1px rgba(114, 114, 114, 0.29);
 }
 
 .titleText {
 	z-index: 9;
+}
+
+.mobileBtn {
+	bottom: 0;
+	background-color: red;
+}
+.backBtn {
+	cursor: grab;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.info {
+	display: flex;
+	text-align: right;
+	justify-content: center;
+	height: 70%;
+	position: relative;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	padding: 20px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.image {
+	overflow: hidden;
+	display: flex;
+}
+
+.project-content {
+	height: 88%;
+}
+
+.project-content .image {
+	width: 100%;
 }

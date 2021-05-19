@@ -1,17 +1,21 @@
 import "./shared/App.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import Home from "./components/Home";
+import Portfolio from "./components/Portfolio";
+import {AnimatePresence} from 'framer-motion'
+
 
 function App() {
-
+  let location = useLocation();
   return (
     <div className="wrapper">
       <div className="main">
-        <BrowserRouter>
-          <Switch>
+          <AnimatePresence>
+          <Switch location={location} key={location.key}>
             <Route component={Home} path="/" exact />
+            <Route component={Portfolio} path="/portfolio" exact />
           </Switch>
-        </BrowserRouter>
+          </AnimatePresence>
       </div>
     </div>
   );

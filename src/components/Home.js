@@ -4,19 +4,47 @@ import { Link } from "react-router-dom";
 import { FaBed } from "react-icons/fa";
 import { IoFastFood } from "react-icons/io5";
 import { IoCodeSlashSharp } from "react-icons/io5";
-export default function Home() {
+
+const buttonVar = {
+	hover: {
+		scale: 1.1,
+		textShadow: "0px 0px 8px rgb(255, 255, 255)",
+		fontWeight: "bold",
+	},
+};
+
+const containerVarients = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 0,
+		transition: {
+			delay: 0.8,
+			duration: 0.8,
+		},
+	},
+	exit: {
+		x: "-100vw",
+		transition: { ease: "easeInOut" },
+	},
+};
+
+
+
+const Home = () => {
 	const constraintsRef = useRef(null);
 
-	const buttonVar = {
-		hover: {
-			scale: 1.1,
-			textShadow: "0px 0px 8px rgb(255, 255, 255)",
-			fontWeight: "bold",
-		},
-	};
 
 	return (
-		<div className="flex flex-wrap content-center bg-gray-400 dark:bg-gray-800 w-full h-screen text-center md:flex-row">
+		<motion.div
+			className="flex flex-wrap content-center bg-gray-400 dark:bg-gray-800 w-full h-screen text-center md:flex-row"
+			varients={containerVarients}
+			initial="hidden"
+			animate="visible"
+			exit="exit"
+
+		>
 			<motion.div className="flex items-center justify-center bg-gray-200 w-full md:w-1/2 leftSide column">
 				<div className="max-w-lg transition-all ease-in-out duration-1000 transform translate-x-0 slide">
 					<div className="example-container">
@@ -38,8 +66,16 @@ export default function Home() {
 						</motion.div>
 					</div>
 					<p className="mt-2 text-gray-600 mx-auto md:my-6">
-						Fullstack Developer & Designer 💥✔
+						a <strong className='text-3xl'>💥Full-stack</strong> Developer & <strong>Designer</strong>
+						<br/>
+						I specialize in <strong>Developing 😊</strong> <i>Human-entered</i>🎨 Design.
 					</p>
+				</div>
+
+				<div className="inline-block align-bottom bg-gray-700 p-5 rounded md:hidden hover:bg-red-200 text-white animate-bounce">
+					<Link to="/portfolio">
+						<span>PORTFOLIO</span>
+					</Link>
 				</div>
 			</motion.div>
 
@@ -51,7 +87,7 @@ export default function Home() {
 					className="box1 hover:bg-red-500 box"
 					whileHover={{ scale: 2 }}
 				>
-					<FaBed size="4rem" />
+					<FaBed size="3rem" />
 				</motion.div>
 				<motion.div
 					animate={{ opacity: 0.3, scale: 1, type: "tween", x: 40 }}
@@ -60,7 +96,7 @@ export default function Home() {
 					className="box2 hover:bg-red-600 box"
 					whileHover={{ scale: 2 }}
 				>
-					<IoFastFood size="4rem" />
+					<IoFastFood size="3rem" />
 				</motion.div>
 				<motion.div
 					animate={{ opacity: 0.2, scale: 1, type: "spring", x: 100 }}
@@ -69,9 +105,9 @@ export default function Home() {
 					className="box3 hover:bg-red-700 box"
 					whileHover={{ scale: 2 }}
 				>
-					<IoCodeSlashSharp size="4rem" />
+					<IoCodeSlashSharp size="3rem" />
 				</motion.div>
-				<Link to={"/"}>
+				<Link to={"/portfolio"}>
 					<motion.h2
 						className="md:text-4xl p-3 font-light text-left text-white titleText"
 						initial={{ fontSize: "80px", backgroundColor: "transparent" }}
@@ -88,6 +124,8 @@ export default function Home() {
 					</motion.h2>
 				</Link>
 			</motion.div>
-		</div>
+		</motion.div>
 	);
-}
+};
+
+export default Home;
