@@ -97,7 +97,14 @@ body {
 }
 
 .project-title-container {
-  background-color: #06275c;
+  background-color: #42aeef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.project-title-container2 {
+  background-color: #48a04b;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -168,11 +175,14 @@ body {
   padding: 20px;
   width: 100%;
   overflow: hidden;
+  color: white;
 }
 
 .image {
   overflow: hidden;
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .project-content {
