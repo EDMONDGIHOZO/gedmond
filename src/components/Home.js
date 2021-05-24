@@ -82,7 +82,7 @@ const Home = () => {
           className="box1 hover:bg-red-500 box"
           whileHover={{ scale: 2 }}
         >
-          <FaBed size="3rem" />
+          <FaBed size="3em" />
         </motion.div>
         <motion.div
           animate={{ opacity: 0.3, scale: 1, type: "tween", x: 40 }}
@@ -91,7 +91,7 @@ const Home = () => {
           className="box2 hover:bg-red-600 box"
           whileHover={{ scale: 2 }}
         >
-          <IoFastFood size="3rem" />
+          <IoFastFood size="3em" />
         </motion.div>
         <motion.div
           animate={{ opacity: 0.2, scale: 1, type: "spring", x: 100 }}
@@ -100,7 +100,7 @@ const Home = () => {
           className="box3 hover:bg-red-700 box"
           whileHover={{ scale: 2 }}
         >
-          <IoCodeSlashSharp size="3rem" />
+          <IoCodeSlashSharp size="3em" />
         </motion.div>
         <Link to={"/portfolio"}>
           <motion.h2
