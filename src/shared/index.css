@@ -101,6 +101,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .box3 {
@@ -168,7 +169,6 @@ body {
   padding: 20px;
   width: 100%;
   overflow: hidden;
-  color: white;
 }
 
 .image {

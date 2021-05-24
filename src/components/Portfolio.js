@@ -92,16 +92,16 @@ class Portfolio extends Component {
       >
         <div className="p-0 md:flex w-full md:h-screen text-center md:flex-row bottom-0">
           <div
-            // className={`side md:h-screen bg-${this.state.mainColor} p-4 top-0 w-full md:w-1/4`}
+            // className={"side md:h-screen p-4 top-0 w-full md:w-1/4"}
             className={`side md:h-screen bg-${this.state.mainColor} p-4 top-0 w-full md:w-1/4`}
           >
             <Link to={"/"}>
               <div className="backBtn box w-14 h-14 ">
-                <BsArrowLeft size="2em" className="hover:scale-50 text-white" />
+                <BsArrowLeft size="2em" className="hover:scale-50" />
               </div>
             </Link>
 
-            <div className="info md:-mx-4">
+            <div className="info md:-mx-4 md:leading-10">
               <span className="font-light"> Owner:</span>
               <span className="text-2md font-bold">
                 {" "}
@@ -116,6 +116,7 @@ class Portfolio extends Component {
               <span className="text-md font-bold">
                 {this.state.project.proroject_stacks}
               </span>
+              <hr />
 
               <a
                 href={this.state.project.project_location.url}
@@ -128,14 +129,17 @@ class Portfolio extends Component {
           </div>
 
           <div className=" md:h-screen bg-white w-full md:w-3/4 cont">
-            <div className="screen h-full md:border-white border-solid border-l-2  shadow-4md">
+            <div className="screen h-full md:border-black border-solid border-l-2  shadow-4xl">
               <div
-                className={`project-title-container p-5 text-left bg-${this.state.mainColor}`}
+                className={
+                  "project-title-container p-5 text-left bg-" +
+                  this.state.mainColor
+                }
               >
-                <h3 className="text-2sm md:text-4xl text-white align-left">
+                <h3 className="text-2sm md:text-4xl align-left">
                   {this.state.project.project_name}
                 </h3>
-                <div className="text-white px-6 divide-white border-l-2 border-solid hover:bg-black p-4 transition-all">
+                <div className="text-black px-6 divide-white border-l-2 border-solid hover:bg-black hover:text-white p-4 transition-all">
                   <button onClick={() => this.GoNext()}>
                     <span className="font-bold">Next Project</span>
                   </button>
