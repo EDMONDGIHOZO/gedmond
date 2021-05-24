@@ -102,13 +102,7 @@ body {
   align-items: center;
   flex-direction: row;
 }
-.project-title-container2 {
-  background-color: #48a04b;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
+
 .box3 {
   border-radius: 50%;
   position: absolute;

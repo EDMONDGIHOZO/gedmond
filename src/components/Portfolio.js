@@ -28,6 +28,7 @@ class Portfolio extends Component {
     loaded: false,
     projectNumber: 2,
     all: 0,
+    mainColor: "black",
   };
 
   apiEndpoint = "https://portfolio-eddy.cdn.prismic.io/api/v2";
@@ -42,6 +43,7 @@ class Portfolio extends Component {
       this.setState({
         all: response.results.length,
         project: response.results[this.state.projectNumber].data,
+        mainColor: response.results[this.state.projectNumber].data.color,
         loaded: true,
       });
     }
@@ -56,6 +58,7 @@ class Portfolio extends Component {
         loaded: false,
         projectNumber: 0,
       });
+      this.componentDidMount();
     } else {
       this.setState({
         loaded: false,
@@ -89,7 +92,7 @@ class Portfolio extends Component {
       >
         <div className="p-0 md:flex w-full md:h-screen text-center md:flex-row bottom-0">
           <div
-            className={`side md:h-screen bg-${this.state.project.color} p-4 top-0 w-full md:w-1/4`}
+            className={`side md:h-screen bg-${this.state.mainColor} p-4 top-0 w-full md:w-1/4`}
           >
             <Link to={"/"}>
               <div className="backBtn box w-14 h-14 ">
@@ -126,7 +129,7 @@ class Portfolio extends Component {
           <div className=" md:h-screen bg-white w-full md:w-3/4 cont">
             <div className="screen h-full md:border-white border-solid border-l-2  shadow-4md">
               <div
-                className={`project-title-container p-5 text-left bg-${this.state.project.color}`}
+                className={`project-title-container p-5 text-left bg-${this.state.mainColor}`}
               >
                 <h3 className="text-2sm md:text-4xl text-white align-left">
                   {this.state.project.project_name}
