@@ -6,14 +6,6 @@ module.exports = {
       fontFamily: {
         Spartan: ["Spartan", "sans-serif"],
       },
-
-      colors: {
-        blue: {
-          light: "#1fb633",
-          DEFAULT: "#1fb633",
-          dark: "#1fb633",
-        },
-      },
     },
   },
   variants: {
