@@ -62,9 +62,22 @@ const Home = () => {
             </motion.div>
           </div>
           <p className="mt-2 text-gray-600 mx-auto md:my-6">
-            a <strong className="text-3xl">💥Full-stack</strong> Developer &{" "}
-            <strong className="text-3xl">Designer</strong>
+            passionate fullstack Developer,
           </p>
+          <div className="aboutme">
+            <a
+              className="link"
+              href="https://mega.nz/file/eQcCVJoR#NztSi36Il16zeRkzASczJupLnVPnJBgB4G3b8wohIKo"
+            >
+              Resume
+            </a>
+            <a className="link" href="www.linkedin.com/in/edmondgi">
+              Linkedin
+            </a>
+            <a className="link" href="https://github.com/EDMONDGIHOZO">
+              Github
+            </a>
+          </div>
         </div>
 
         <div className="inline-block align-bottom bg-gray-700 p-5 rounded md:hidden hover:bg-red-200 text-white animate-bounce">

@@ -185,3 +185,20 @@ body {
 .project-content .image {
   width: 100%;
 }
+
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80;
+}
+
+.aboutme .link {
+  color: #06275c;
+  padding: 6px;
+  border: #06275c solid 1px;
+  border-radius: 4px;
+}
+.aboutme .link:hover {
+  color: #fff;
+  background-color: #06275c;
+}
