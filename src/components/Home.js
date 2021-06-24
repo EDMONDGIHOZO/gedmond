@@ -67,14 +67,6 @@ const Home = () => {
           <div className="aboutme">
             <a
               className="link"
-              href="https://mega.nz/file/eQcCVJoR#NztSi36Il16zeRkzASczJupLnVPnJBgB4G3b8wohIKo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Resume
-            </a>
-            <a
-              className="link"
               href="www.linkedin.com/in/edmondgi"
               target="_blank"
               rel="noopener noreferrer"
