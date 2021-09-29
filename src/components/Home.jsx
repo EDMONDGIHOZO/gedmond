@@ -41,7 +41,7 @@ const Home = () => {
           <h2>ABOUT ME</h2>
           <div className="about-text-container">
             <p>
-              i enjoy creating things that live on internet , my interest on web
+              I enjoy creating things that live on internet , my interest on web
               development started by in 2014, when i liked yo creating things
               using html, fast forward to today i’ve had privillage of working
               as web developer consultant for different companies. my focus
