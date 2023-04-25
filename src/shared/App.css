@@ -8,9 +8,6 @@
     line-height: auto;
   }
 
-  .menu-links-container ul {
-    display: none;
-  }
 
   .about-me-container {
     text-align: center;
@@ -35,4 +32,33 @@
   .container {
     width: 1170px;
   }
+}
+
+
+.paypage_wrapper {
+    padding: 40px;
+    color: white;
+    border: solid 2px white;
+}
+
+.paypage_wrapper:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.471);
+    color: #000;
+}
+
+.page_wrapper {
+    padding: 20px 20px 0 20px;
+}
+
+.langs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: rgba(176, 176, 176, 0.654);
+}
+
+.langs span::before {
+    content: "-";
 }

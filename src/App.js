@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 
 import { AnimatePresence } from "framer-motion";
+import PayPage from "./components/PayPage";
 
 function App() {
   let location = useLocation();
@@ -14,6 +15,7 @@ function App() {
           <Switch location={location} key={location.key}>
             <Route component={Home} path="/" exact />
             <Route component={Portfolio} path="/portfolio" exact />
+            <Route component={PayPage} path="/pay" exact />
           </Switch>
         </AnimatePresence>
       </div>
